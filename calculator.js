@@ -1,5 +1,7 @@
+const a = parseInt (document.getElementById('inputA').value);
+
 function calc(operator) {
-    const a = parseInt (document.getElementById('inputA').value);
+
     const b = parseInt (document.getElementById('inputB').value);
     const c = a + b;
 
@@ -16,4 +18,7 @@ function calc(operator) {
 
 function add(a, b) {
     console.log(a + b);
+}
+function updatehistory(res) {
+    
 }
