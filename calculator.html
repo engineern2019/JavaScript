@@ -1,18 +1,16 @@
 <html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    
     <body>
-        <input type="Number" name="inputA" id="inputA">
-        <input type="Number" name="inputB" id="inputB">
-    </div>
-<div>
-<button onclick="calc('+')">+</button>
-<button onclick="calc('-')">-</button>
-<button onclick="calc('*')">*</button>
-<button onclick="calc('/')">/</button>
-<script src="calculator.js"></script>
-<p id="result">numbers</p>
-Result = <input type = 'number' name = 'inputC' id='inputC'>
-</div>
-<div> id= history;
-</div>
+        <input type="Number" id="inputA">
+        <input type="Number" id="inputB">
+        <button onclick="calc().add()">+</button>
+        <button onclick="calc().subt()">-</button>
+        <button onclick="calc().div()">/</button>
+        <button onclick="calc().mult()">*</button>
+        <p id="result"></p>
+        <script src="calculator.js"></script>
     </body>
 </html>

@@ -1,24 +1,25 @@
-const a = parseInt (document.getElementById('inputA').value);
+function calc() {
+    const valA = +document.getElementById('inputA').value;
+    const valB = +document.getElementById('inputB').value;
 
-function calc(operator) {
+    return{
+        add: function() {
+            writeOutput(valA + valB);
+        },
+        subt: function() {
+            writeOutput(valA - valB);
+        },
+        div: function() {
+            writeOutput(valA / valB);
+        },
+        mult: function() {
+            writeOutput(valA * valB);
+        }        
+    };
+}   
 
-    const b = parseInt (document.getElementById('inputB').value);
-    const c = a + b;
-
-    if (operator === '+') {
-        add(a + b);
-    } else if (operator === '-') {
-        subtract(a - b);
-    } else if (operator === '*') {
-        multiply(a * b );
-    } else if (operator === '/') {
-        divide(a / b);
-    }
-}
-
-function add(a, b) {
-    console.log(a + b);
-}
-function updatehistory(res) {
-    
+        
+function writeOutput(out) {
+    console.log(out);
+    document.getElementById('result').innerText = out;
 }
