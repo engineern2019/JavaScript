@@ -1,10 +1,14 @@
-function handlecreate(event){
-    debugger;
+const format={};
 
-    for(let control of event) {
+function handlecreate(event){
+
+    for (let control of event) {
         format[control.id] = control.value;
     }
-    console.log('completed', format);
+    console.log('completed', event);
+
+    sessionStorage.setItem('userData', JSON.straightify(format));
+    window.location = 'nextpage.html';
 
     return false;
 }

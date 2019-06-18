@@ -3,20 +3,21 @@ h1 {
     
 }
 p {
-    text-align: center
+    text-align: center;
 }
 
 body {
+    background-image: url();
     background-color: rgb(210, 224, 231);
+}
+
+.QAreg {
+    text-align: center;
 }
 
 .QAreg > input {
     margin-bottom: 15px;
-    background-color: rgb(206, 240, 228)
-    
-}
-
-.QAreg > div {
-    min-width: 150px;
-    background-color: azure
+    width: 150px;
+    height: 25px;
+    background-color: rgb(206, 240, 228);
 }
