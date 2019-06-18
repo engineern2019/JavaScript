@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(221, 195, 231)
+}
+
+button {
+    color: bisque
+}
+
+#inputA {
+    border: rgb(93, 177, 93) 2px solid;
+}
+#inputA:hover{
+    background-color: aquamarine
+}
+*{
+    transform: rotate;
+}
+
+#inputB {
+    border: rgb(93, 177, 93) 2px solid;
+}#inputB:hover{
+    background-color: aquamarine
+}
