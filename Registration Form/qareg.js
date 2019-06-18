@@ -6,8 +6,7 @@ function handlecreate(event){
         format[control.id] = control.value;
     }
     console.log('completed', event);
-
-    sessionStorage.setItem('userData', JSON.straightify(format));
+    sessionStorage.setItem('userData', JSON.stringify(format));
     window.location = 'nextpage.html';
 
     return false;
