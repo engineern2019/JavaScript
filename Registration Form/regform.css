@@ -1,3 +1,22 @@
+h1 {
+    text-align: center;
+    
+}
+p {
+    text-align: center
+}
+
 body {
-    background-color: azure;
+    background-color: rgb(210, 224, 231);
+}
+
+.QAreg > input {
+    margin-bottom: 15px;
+    background-color: rgb(206, 240, 228)
+    
+}
+
+.QAreg > div {
+    min-width: 150px;
+    background-color: azure
 }
