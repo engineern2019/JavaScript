@@ -1,15 +1,6 @@
-function fetchlogin() {
-    const request = new XMLHttpRequest();
-    request.open(
-        'GET',
-        'https://us-central1-qac-sandbox.cloudfunctions.net/login'
-    );
-    request.onload = () => {
+$("#login-button").click(function(event){
+    event.preventDefault();
 
-        const parsedData = JSON.parse(request.responseText);
-        console.log('DATA', parsedData);
-        displaySuperheroData(parsedData);
-    };
-    request.send();
-    console.log('sent!');
-}
+$('form').fadeOut(500);
+$('.wrapper').addClass('form-success');
+});
