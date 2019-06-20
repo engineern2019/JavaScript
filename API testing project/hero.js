@@ -15,13 +15,20 @@ function fetchSuperheroes() {
 
     request.send();
     console.log('sent!');
-}
 
-function displaySuperheroData(data) {
-    console.log('do stuff here with the data', data.squadName);
-
-    document.getElementById('squadName').innerText = data.squadName;
-
+    
 }
 
 fetchSuperheroes();
+
+function displaySuperheroData(parsedData) {
+    // console.log('do stuff here with the data', parsedData.squadName);
+
+    //document.getElementById('squadName').innerText = parsedData.squadName;
+    const squads = document.getElementById('squadName');
+    console.log(squads);
+    squads.innerHTML = parsedData.squadName;
+
+
+
+}
